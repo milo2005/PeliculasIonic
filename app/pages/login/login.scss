@@ -1,0 +1,17 @@
+.login-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-background{
+    background-image: url("http://www.tutoriasenred.com/wp-content/uploads/2014/09/cine.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-title{
+    color: white;
+}

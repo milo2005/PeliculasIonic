@@ -1,0 +1,26 @@
+<ion-content padding class="login-background">
+    <div class="login-page">
+        <h2 class="login-title">Iniciar Sesion</h2>
+        <ion-item>
+            <ion-label floating>Usuario</ion-label>
+            <ion-input type="text" [(ngModel)]="user"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Contraseña</ion-label>
+            <ion-input type="password" [(ngModel)]="pass"></ion-input>
+        </ion-item>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col width-50>
+                    <button clear full>Registrar</button>
+                </ion-col>
+                <ion-col width-50>
+                    <button full (click)="goToHome()">Entrar</button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+    </div>
+</ion-content>
