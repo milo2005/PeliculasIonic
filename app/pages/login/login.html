@@ -1,12 +1,17 @@
-<ion-content padding class="login-background">
+<div class="login-background">
+    <ion-content padding class="transparent">
     <div class="login-page">
-        <h2 class="login-title">Iniciar Sesion</h2>
-        <ion-item>
+
+        <span class="login-header" text-center>Estrenos</span>
+
+        <div class="login-panel">
+            <h3 class="login-title thin">Iniciar Sesion</h3>
+        <ion-item class="login-item">
             <ion-label floating>Usuario</ion-label>
             <ion-input type="text" [(ngModel)]="user"></ion-input>
         </ion-item>
 
-        <ion-item>
+        <ion-item  class="login-item">
             <ion-label floating>Contraseña</ion-label>
             <ion-input type="password" [(ngModel)]="pass"></ion-input>
         </ion-item>
@@ -22,5 +27,8 @@
             </ion-row>
         </ion-grid>
 
+        </div>
+        
     </div>
 </ion-content>
+</div>
