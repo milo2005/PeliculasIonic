@@ -3,10 +3,12 @@ import { ionicBootstrap, Platform } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 
 import {LoginPage} from './pages/login/login';
+import {MovieService} from './providers/movies/movie.provider';
 
 
 @Component({
-  template: '<ion-nav [root]="rootPage"></ion-nav>'
+  template: '<ion-nav [root]="rootPage"></ion-nav>',
+  providers:[MovieService]
 })
 export class MyApp {
   rootPage: any = LoginPage;

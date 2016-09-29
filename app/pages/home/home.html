@@ -1,14 +1,23 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar primary>
     <ion-title>
-      Ionic Blank
+      Estrenos
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+ 
+    <ion-card *ngFor="let m of movies">
+      <img src="{{m.image}}">
+      <ion-card-content>
+        <ion-card-title>
+          {{m.name}}
+        </ion-card-title>
+
+        <span>{{m.genere}}</span>
+        <p>{{m.shortDescription}}</p>
+      </ion-card-content>
+    </ion-card>
+
 </ion-content>

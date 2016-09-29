@@ -16,7 +16,7 @@ export class LoginPage {
 
     goToHome(){
         console.log("Usuario:"+this.user+" Password:"+this.pass);
-        this.nav.push(HomePage);
+        this.nav.setRoot(HomePage);
         
     }
 
